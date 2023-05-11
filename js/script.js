@@ -421,7 +421,7 @@ function rellenarFormulario() {
     fetch('https://api.generadordni.es/v2/misc/phonenumber')
     .then(response => response.json())
     .then(data => {
-        setTimeout(() => { telefonoInput.value = "11" + data[0].slice(1);}, 1000);
+        setTimeout(() => { telefonoInput.value = "11" + data[0].slice(1);}, 500);
         console.log(typeof(data[0]))
         
     })
